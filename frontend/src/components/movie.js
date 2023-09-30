@@ -29,6 +29,7 @@ const Movie = props => {
     )
 }
 
+// This file has been completely updated
 // function Movie() {
 //     return (
 //         <div className="App">
