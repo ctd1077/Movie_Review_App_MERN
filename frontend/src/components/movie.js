@@ -8,8 +8,7 @@ import Image from 'react-bootstrap/Image'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import Media from 'react-bootstrap/Media'
-
+import Media from 'react-bootstrap/Media';
 
 const Movie = props => {
 
@@ -31,7 +30,7 @@ const Movie = props => {
 
     useEffect(()=>{
         getMovie(props.match.params.id)
-    },[props.match.parmas.id])
+    },[props.match.params.id])
 
     return (
         <div>
