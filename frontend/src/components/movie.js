@@ -29,7 +29,7 @@ const Movie = props => {
     )
 }
 
-// Git configuration Update
+// Git configuration Update test
 // function Movie() {
 //     return (
 //         <div className="App">
