@@ -64,7 +64,7 @@ const Movie = props => {
                                     {props.user && props.user.id === review.user_id &&
                                         <Row>
                                             <Col>
-                                                <Link to {{
+                                                <Link to={{
                                                     pathname:"/movies/"+props.match.params.id+"/review",
                                                     state: {currentReview: review}
                                                 }}>Edit</Link>
