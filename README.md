@@ -27,7 +27,7 @@ Starting the Frontend server
 
 ## notes
 
-If you're having issues with the port being left open thn run kill port
+If you're having issues with the port being left open then run kill port
   - To list any process listening to the port 5000:
     lsof -i: 5000
   - To kill any process listening to the port 5000:
@@ -36,4 +36,3 @@ If you're having issues with the port being left open thn run kill port
     kill -9 $(lsof -t -i:5000)
   - Front end use 
     sudo kill -9 $(sudo lsof -t -i:3000)
-
