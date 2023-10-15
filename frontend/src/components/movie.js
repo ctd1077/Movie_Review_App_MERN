@@ -48,7 +48,7 @@ const Movie = props => {
                                     {movie.plot}
                                 </Card.Text>
                                 {props.user &&
-                                <Link to ={"/movies" + props.match.params.id + "/review"}>
+                                <Link to={`/movies/${props.match.params.id}/review`}>
                                     Add Review
                                     </Link>}
                             </Card.Body>

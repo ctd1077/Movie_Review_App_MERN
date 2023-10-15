@@ -9,10 +9,10 @@ const AddReview = props => {
     let editing = false
     let initialReviewState = ""
 
-    if(props.location.state && props.location.state.currentReview){
-        editing = true
-        initialReviewState = props.location.state.currentReview.review
-    }
+    // if(props.location.state && props.location.state.currentReview){
+    //     editing = true
+    //     initialReviewState = props.location.state.currentReview.review
+    // }
 
     const [review, setReview] = useState(initialReviewState)
     const [submitted, setSubitted] = useState(false)
@@ -41,7 +41,7 @@ const AddReview = props => {
             })
         }
         else{
-            MovieDataService.onChangeReview(data).then(response => {
+            MovieDataService.createReview(data).then(response => {
                 setSubitted(true)
             }).catch(e => {
                 console.log(e);
