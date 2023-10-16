@@ -29,8 +29,8 @@ const AddReview = props => {
             user_id: props.user.id,
             movie_id: props.match.params.id // This will get the movie id directly from the url
         }
-
-        if(editing){
+        
+        if(editing) {
             // get existing review id
             data.review_id = props.location.state.currentReview._id
             MovieDataService.updateReview(data).then(response =>{
@@ -39,8 +39,7 @@ const AddReview = props => {
             }).catch(e =>{
                 console.log(e)
             })
-        }
-        else{
+        } else {
             MovieDataService.createReview(data).then(response => {
                 setSubitted(true)
             }).catch(e => {

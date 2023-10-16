@@ -13,7 +13,7 @@ const Login = props => {
     }
 
     const onChangeId = e => {
-        const id = e.targetvalue
+        const id = e.target.value
         setId(id);
     }
 
