@@ -24,4 +24,3 @@ Starting the Frontend server
  - cd into frontend folder
  - cd movieReviewApp/movie-reviews/frontend 
  - npm start
-
