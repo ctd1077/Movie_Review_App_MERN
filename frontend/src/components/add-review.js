@@ -9,10 +9,10 @@ const AddReview = props => {
     let editing = false
     let initialReviewState = ""
 
-    // if(props.location.state && props.location.state.currentReview){
-    //     editing = true
-    //     initialReviewState = props.location.state.currentReview.review
-    // }
+     if(props.location.state && props.location.state.currentReview){
+         editing = true
+         initialReviewState = props.location.state.currentReview.review
+    }
 
     const [review, setReview] = useState(initialReviewState)
     const [submitted, setSubitted] = useState(false)
@@ -62,10 +62,11 @@ const AddReview = props => {
                     <Form.Group>
                         <Form.Label>{editing ? "Edit" : "Create"} Review</Form.Label>
                         <Form.Control
-                        type="text"
-                        required
-                        value={review}
-                        onChange={onChangeReview}/>
+                            type="text"
+                            required
+                            value={review}
+                            onChange={onChangeReview}
+                        />
                     </Form.Group>
                     <Button variant="primary" onClick={saveReview}>
                         Submit
