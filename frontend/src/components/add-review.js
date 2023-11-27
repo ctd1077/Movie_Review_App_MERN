@@ -35,7 +35,7 @@ const AddReview = props => {
             data.review_id = props.location.state.currentReview._id
             MovieDataService.updateReview(data).then(response =>{
                 setSubitted(true);
-                console.log(response.data)
+                console.log(response.data);
             }).catch(e =>{
                 console.log(e)
             })
