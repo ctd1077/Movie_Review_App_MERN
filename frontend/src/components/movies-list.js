@@ -140,7 +140,7 @@ const MoviesList = props => {
                         })}
                     </Row>
                     <br />
-                    Showing page: {currentPage}.
+                    Showing page: {currentPage + 1}.
                     <Button variant="link" onClick={() => {setCurrentPage(currentPage + 1)}}>
                         Get next {entriesPerPage} results
                     </Button>
